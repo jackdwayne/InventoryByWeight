@@ -1,7 +1,7 @@
 # InventoryByWeight
 An application that will return the number of items by dividing the total weight by the wieght of the item.
 ## Purpose
-To solve the issue in my Air National Guard unit where hand jamming every single peice of medical equipment was taking to many man hours. With limited hours as duty status guardsmen, this can help get the task get done faster and allow the unit to be more productive during regular scheduled drills.
+To solve the issue in my Air National Guard unit where counting inventory by hand is taking to many man hours. With limited hours as duty status guardsmen, this can help get the task get done faster and allow the unit to be more productive during regular scheduled drills.
 ## Design
 <1.0.0> 
 The user will open the application and be met with two input boxes. The first will be for the total weight and the second will be for the individual item. A button named "calculate" will take the input of the two input boxes and run the dividing function and return the number of items.
