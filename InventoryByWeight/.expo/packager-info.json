@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 7492,
-  "expoServerNgrokUrl": "https://z7-id8.jackdwayne.inventorybyweight.exp.direct",
-  "packagerNgrokUrl": "https://packager.z7-id8.jackdwayne.inventorybyweight.exp.direct",
-  "ngrokPid": 9624
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }
