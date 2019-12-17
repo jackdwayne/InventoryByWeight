@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import {CSVLink} from "react-csv";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu',
 });
+
+
 
 export default class App extends Component {
   constructor(props){
@@ -13,11 +16,20 @@ export default class App extends Component {
     this.state ={
       totalWeight: 0,
       itemWeight: 0,
+      iD: 0,
+      itemName: "",
+      amount: 0,
     }
   }
-  _handleButtonPress(totalWeight,itemWeight){
-    var ans = totalWeight/itemWeight;
+  
+  _handleButtonPress= () => {
+    var ans = this.state.totalWeight/this.state.itemWeight;
+    if(this.state.itemWeight == 0 || this.state.totalWeight == 0){
+      alert("Cannot divide by 0");
+    }
+    else{
     alert("Number of items: " + ans);
+    }
   }
 
   render() {
@@ -36,7 +48,8 @@ export default class App extends Component {
           placeholder="Item Weight"
           onChangeText={(single) => this.setState({itemWeight:single})}
         />
-        <Button title="Calculate" onPress={this._handleButtonPress.bind(this,this.state.totalWeight,this.state.itemWeight)}></Button>
+        <Button title="Calculate" onPress={this._handleButtonPress}></Button>
+        
       </View>
     );
   }
